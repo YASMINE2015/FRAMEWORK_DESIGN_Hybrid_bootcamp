@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tutorialsNinja.Listeners.MyListeners"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.tutorialsNinja.TestCases.AddToCartTest">
+        <methods>
+          <include name="addASingleItemToCart"/>
+          <include name="tearDown"/>
+          <include name="addMultipleItemsToCart"/>
+          <include name="loginSetup"/>
+          <include name="removeTheItemFromTheCart"/>
+        </methods>
+      </class> <!-- com.tutorialsNinja.TestCases.AddToCartTest -->
+      <class name="com.tutorialsNinja.TestCases.CheckoutTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyCheckoutWithDetails"/>
+          <include name="verifycheckoutWithNoDetails"/>
+          <include name="registerSetup"/>
+        </methods>
+      </class> <!-- com.tutorialsNinja.TestCases.CheckoutTest -->
+      <class name="com.tutorialsNinja.TestCases.RegisterTest">
+        <methods>
+          <include name="verifyRegisterWithNoDetails"/>
+          <include name="verifyRegisterWithAllDetails"/>
+          <include name="verifyRegisterWithWrongConfirmPassword"/>
+          <include name="registerSetup"/>
+          <include name="verifyRegisterWithExistingEmail"/>
+          <include name="tearDown"/>
+          <include name="verifyRegisterWithMandatoryDetails"/>
+        </methods>
+      </class> <!-- com.tutorialsNinja.TestCases.RegisterTest -->
+      <class name="com.tutorialsNinja.TestCases.SearchProductTest">
+        <methods>
+          <include name="verifySearchInvalidProduct"/>
+          <include name="verifySearchValidProduct"/>
+          <include name="loginSetup"/>
+          <include name="verifySearchNoProduct"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tutorialsNinja.TestCases.SearchProductTest -->
+      <class name="com.tutorialsNinja.TestCases.LoginTest">
+        <methods>
+          <include name="verifyLoginWithInvalidEmailValidPassword"/>
+          <include name="verifyLoginWithValidEmailInvalidPassword"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginWithInvalidCredentials"/>
+          <include name="verifyLoginWithNoCredentials"/>
+          <include name="loginSetup"/>
+          <include name="verifyLoginWithValidCredentials"/>
+        </methods>
+      </class> <!-- com.tutorialsNinja.TestCases.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
